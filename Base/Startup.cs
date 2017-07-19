@@ -37,6 +37,8 @@ namespace Base
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseIdentity();
 
             app.UseMvcWithDefaultRoute();
