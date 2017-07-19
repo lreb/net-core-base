@@ -18,7 +18,7 @@ namespace Base.Models.Identity
         public string Password { get; set; }
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm")]
+        [Display(Name = "Confirm password")]
         [Compare("Password",ErrorMessage ="The password and confirmation don't match")]
         public string ConfirmPassword { get; set; }
     }
