@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<PackageTargetFallback>$(PackagetargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>		
+	</PropertyGroup>
+	
   <ItemGroup>
     <Content Include="wwwroot\css\StyleSheet.css" />
   </ItemGroup>
