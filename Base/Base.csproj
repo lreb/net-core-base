@@ -2,11 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+	<PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>		
   </PropertyGroup>
-
-	<PropertyGroup>
-		<PackageTargetFallback>$(PackagetargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>		
-	</PropertyGroup>
 	
   <ItemGroup>
     <Content Include="wwwroot\css\StyleSheet.css" />
@@ -20,6 +17,14 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0-preview4-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" />
   </ItemGroup>
 
+	<ItemGroup>
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+	</ItemGroup>
+	
 </Project>
