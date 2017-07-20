@@ -14,5 +14,7 @@ namespace Base.Models
         {
 
         }
+
+        public DbSet<Profile> Profiles { get; set; }
     }
 }

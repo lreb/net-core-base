@@ -20,7 +20,8 @@ namespace Base
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BaseCore"));
+            //services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BaseCore"));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=BaseCore;Integrated Security=SSPI;"));
 
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
